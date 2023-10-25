@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD - Catálogo de veículos</title>
+  <link rel="stylesheet" href="crud-style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Catálogo de Carros</h1>
+    <form id="carsForm">
+      <div class="inputsContainer">
+        <div class="input">
+          <label for="name">Nome: </label>
+          <input type="text" placeholder="Nome do Carro" id="name" />
+        </div>
+
+        <div class="input">
+          <label for="model">Modelo: </label>
+          <input type="text" placeholder="Modelo do Carro" id="model" />
+        </div>
+
+        <div class="input">
+          <label for="doors">Portas: </label>
+          <input type="number" placeholder="Quantidade de Portas" id="doors" />
+        </div>
+
+        <div class="input">
+          <label for="colour">Cor: </label>
+          <input type="text" placeholder="Cor do carro" id="colour" />
+        </div>
+
+        <div class="input">
+          <label for="brand">Marca: </label>
+          <select id="brand">
+            <option value="" disabled selected>Marca do carro</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">Bmw</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="fiat">Fiat</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Honda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="jeep">Jeep</option>
+            <option value="kia">Kia</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="nissan">Nissan</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="porsche">Porsche</option>
+            <option value="tesla">Tesla</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="volvo">Volvo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="submitBtn">
+        <button type="submit" id="submitBtn">
+          ADICIONAR VEÍCULO / EDITAR
+        </button>
+      </div>
+    </form>
+
+    <div class="outputsContainer" id="carsList"></div>
+  </div>
+
+  <script src="crud-app.js"></script>
+</body>
+
+</html>
